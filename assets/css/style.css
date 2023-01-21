@@ -3,10 +3,23 @@
     padding: 0;
     margin: 0;
 }
+/*universal selector - sets box-sizing to border-box, padding to 0, and margin to 0, for all elements*/
 
 body {
     background-color: #d9dcd6;
 }
+/*tag - sets background color of the body of the page to #d9dcd6*/
+
+a {
+    color: #ffffff;
+    text-decoration: none;
+}
+/*tag - sets text color for all links and removes the underline text-decoration*/
+
+p {
+    font-size: 16px;
+}
+/*tag - sets font size for all <p> elements to 16px*/
 
 .header {
     padding: 20px;
@@ -14,15 +27,18 @@ body {
     background-color: #2a607c;
     color: #ffffff;
 }
+/*class - sets padding, font-family, fallback fonts, background color, and text color for header element with this class*/
 
 .header h1 {
     display: inline-block;
     font-size: 48px;
 }
+/*for any h1 elements within the parent header class, sets display to inline-block and font size to 48px*/
 
 .header h1 .seo {
     color: #d9dcd6;
 }
+/*for any seo class, within any h1 parent tag, within any header class, sets the font color to #d9dcd6*/
 
 .header nav {
     padding-top: 15px;
@@ -31,24 +47,18 @@ body {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 20px;
 }
+/*for nav elements within parent header class, changes padding, margin, float, font-family, fallack fonts, and font size*/
 
-.header div ul {
+.header nav ul {
     list-style-type: none;
 }
+/*sets the style of the list to none for ul elements within parent nav, within grandparent header class*/
 
 .header nav ul li {
     display: inline-block;
     margin-left: 25px;
 }
-
-a {
-    color: #ffffff;
-    text-decoration: none;
-}
-
-p {
-    font-size: 16px;
-}
+/*sets display to inline-block and adds margin-left fir li elements within ul, within nav, within header class*/
 
 .hero {
     height: 800px;
@@ -58,22 +68,47 @@ p {
     background-size: cover;
     background-position: center;
 }
+/*class - sets styling, positioning, and background image for hero class*/
 
-.float-left  {
-    float: left;
-    margin-right: 25px;
+.article {
+    margin-bottom: 20px;
+    padding: 50px;
+    height: 300px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #0072bb;
+    color: #ffffff;
 }
-
-.float-right {
-    float: right;
-    margin-left: 25px;
-}
+/*class - changes properties of any html element with article class*/
 
 .content {
     width: 75%;
     display: inline-block;
     margin-left: 20px;
 }
+/*class - changes properties of any html element with content class*/
+
+.article img {
+    max-height: 200px;
+}
+/*sets maximum height of any image element within parent article class*/
+
+.article h2 {
+    margin-bottom: 20px;
+    font-size: 36px;
+}
+/*sets bottom margin and font size for h2 elements within parent article class*/
+
+.float-left {
+    float: left;
+    margin-right: 25px;
+}
+/*class - applies a left float and right margin of 25px for html elements with this class*/
+
+.float-right {
+    float: right;
+    margin-left: 25px;
+}
+/*class - applies a right float and left margin of 25px for html elements with this class*/
 
 .benefits {
     margin-right: 20px;
@@ -85,40 +120,26 @@ p {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     background-color: #2589bd;
 }
+/*class - changes properties of html elements with benefits class*/
 
 .benefit {
     margin-bottom: 32px;
     color: #ffffff;
 }
+/*class - sets bottom margin and text color for elements with benefit class*/
 
 .benefit h3 {
     margin-bottom: 10px;
     text-align: center;
 }
+/*for any h3 elements within parent benefit class, sets bottom margin to 10px and aligns text to the center*/
 
 .benefit img {
     display: block;
     margin: 10px auto;
     max-width: 150px;
 }
-
-.article {
-    margin-bottom: 20px;
-    padding: 50px;
-    height: 300px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #0072bb;
-    color: #ffffff;
-}
-
-.article img {
-    max-height: 200px;
-}
-
-.article h2 {
-    margin-bottom: 20px;
-    font-size: 36px;
-}
+/*for any img elements within parent benefit class, sets display to block, adds margin of 10px to top and bottom, auto margin for left and right, and sets maximum width*/
 
 .footer {
     padding: 30px;
@@ -126,7 +147,9 @@ p {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     text-align: center;
 }
+/*class - changes properties of any html elements with footer class*/
 
 .footer h2 {
     font-size: 20px;
 }
+/*for any h2 elements within parent footer class, sets font size to 20px*/
