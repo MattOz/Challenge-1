@@ -7,7 +7,7 @@ In this challenge I refactored existing code which consisted of the following en
 2. Increased efficiency of css code by consolidating repetitive selectors and properties. I also re-organized them to follow the semantic structure of html elements. Lastly, I added comments on all css code to describle how it changes the styling of the website.
 __________________________________________________________________________________________________________________
 
-[link to deployed application](https://)
+[link to deployed application](https://mattoz.github.io/Code-Refactoring/)
 __________________________________________________________________________________________________________________
 
 Preview of Web Page:
