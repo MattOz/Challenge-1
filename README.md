@@ -1,4 +1,4 @@
-Code Refactor Challange
+Code Refactor Challenge
 
 In this challenge I refactored existing code which consisted of the following enhancements:
 
